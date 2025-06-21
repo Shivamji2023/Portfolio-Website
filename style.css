@@ -1,0 +1,239 @@
+/* bolierplate */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy','snas-serif';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+/* nav */
+.nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+}
+.page2{
+    display: flex;
+    gap: 50px;
+}
+.page2 h3 a{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 2s ease;
+}
+.page2 h3 a:hover{
+    border-bottom: 3px solid white;
+}
+.dark-mode{
+    background-color: black;
+    color:  white;
+}
+.light-mode{
+    background-color: white;
+    color:  black;
+}
+.light-mode .nav h3 a{
+     background-color: white;
+    color:  black;
+}
+.light-mode .page2 h3 a{
+     border-bottom: 3px solid transparent;
+}
+.light-mode .page2 h3 a:hover{
+      border-bottom: 3px solid black;
+}
+/* home */
+.home{
+    height: 420px;
+    width: 100%;
+    /* background-color: red; */
+    /* display:flex; */
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.myImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.line1{
+    text-align: center;
+}
+.line2{
+    text-align: center;
+    /* font-size: 45px; */
+    font-size: 30px;
+}
+.line3{
+    text-align: center;
+    /* font-size: 45px; */
+    font-size: 40px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.mybtn{
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+.mybtn:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.light-mode .mybtn{
+    background-color: black;
+    color: white;
+}
+.light-mode .mybtn:hover{
+    background-color: rgb(24, 23, 23);
+}
+/* projects */
+
+.projects{
+    height: 480px;
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: red; */
+    text-align: center; 
+}
+.boxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.box{
+    /* height: 380px; */
+    height: 400px;
+    /* width: 320px; */
+    width: 420px;
+
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.box .ecommerce{
+    /* height: 140px; */
+    height: 160px;
+
+    /* margin-top: 90px; */
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.box h3{
+    margin-top: 10px;
+}
+.box .portfolio {
+    /* height: 120px; */
+    height: 160px;
+
+    /* margin-top: 90px; */
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.box .chatapp{
+    /* height: 140px; */
+    height: 160px;
+
+    /* margin-top: 90px; */
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.light-mode .projects{
+    background-color: white;
+    color: black;
+}
+.light-mode .box{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.light-mode .box .ecommerce{
+   border: 2px solid black;
+}
+.light-mode .portfolio{
+    border: 2px solid black;
+}
+.light-mode .chatapp{
+    border: 2px solid black;
+}
+
+
+
+
+/* .nav h3 a{
+    text-decoration: none;
+    color: white;
+} */
+
+/* .boxes h2 a{
+    /* height: 50px;
+    width: 150px; */
+    /* font-size: 1.2rem; */
+    /* border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-decoration: none; */
+    /* border-radius: 20px;
+    background-color: white;
+    color: black;
+    /* background-color: wheat; */
+    /* cursor: pointer;  */
+ 
+
+    /* self build */
+
+.box h2{
+    display: flex;
+    justify-content: center;
+}
+.box h2 a{
+    height: 50px;
+    width: 150px; 
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+.box h2 a:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.light-mode .box h2 a{
+    background-color: black;
+    color: white;
+}
+.light-mode .box h2 a{
+    background-color: rgb(24, 23, 23);
+}
